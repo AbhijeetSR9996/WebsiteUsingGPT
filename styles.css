@@ -1,0 +1,466 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url('img2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height to the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000; /* Set text color to white or your preferred color */
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background-color: #cc0000;
+}
+
+#products {
+    padding: 50px 0;
+}
+
+.product {
+    float: left;
+    width: 30%;
+    margin: 0 2%;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    font-weight: bold;
+}
+
+.product a {
+    display: block;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin-right for the last element */
+}
+
+.search-bar {
+    float: right; /* Float the search bar to the right */
+}
+
+/* Media query for responsive layout */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex; /* Change to flexbox layout */
+        justify-content: center; /* Center the navigation links */
+        margin-top: 20px; /* Add margin to separate from header content */
+    }
+    
+    .nav-links li {
+        margin: 0 10px; /* Adjust margin between navigation links */
+    }
+    
+    .search-bar {
+        float: none; /* Remove float for responsive layout */
+        text-align: center; /* Center the search bar */
+        margin-top: 20px; /* Add margin to separate from header content */
+    }
+}
+
+.categories {
+    position: relative; /* Position the categories dropdown */
+}
+
+.sub-menu {
+    display: none; /* Hide the sub-menu by default */
+    position: absolute; /* Position the sub-menu relative to its parent */
+    top: 100%; /* Align the top of the sub-menu with the bottom of the parent */
+    left: 0; /* Align the left of the sub-menu with the left of the parent */
+    background-color: #fff; /* Background color for the sub-menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a box shadow for style */
+    z-index: 1; /* Ensure the sub-menu appears above other content */
+}
+
+.categories:hover .sub-menu {
+    display: block; /* Display the sub-menu when hovering over the categories */
+}
+
+.sub-menu li {
+    display: block;
+    padding: 10px;
+}
+
+.sub-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sub-menu li:hover {
+    background-color: #f5f5f5; /* Background color on hover */
+}
+
+.featured-product {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out; /* Apply transition for smooth effect */
+}
+
+.featured-product:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+    z-index: 1; /* Ensure the hovered element is above other elements */
+}
+
+.nav-links li a {
+    color: #808080; /* Default color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Apply transition for smooth effect */
+}
+
+.nav-links li a:hover {
+    color: #ff4d4d; /* Change color on hover */
+}
+
+.user-links {
+    float: right;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.user-links a {
+    color: #808080;
+    text-decoration: none;
+    margin-left: 10px; /* Adjust the margin between links */
+}
+
+.user-links a:hover {
+    color: #ff4d4d; /* Change color on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.company-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.company-block div {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.company-block h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.company-block p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.company-block a {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.company-block a:hover {
+    background-color: #cc0000;
+}
+
+.newsletter {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.newsletter h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #cc0000;
+}
+
+.help {
+    margin-top: 20px; /* Add margin to separate the newsletter and help sections */
+}
+
+.help h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.help ul {
+    list-style: none;
+    padding: 0;
+}
+
+.help ul li {
+    margin-bottom: 5px;
+}
+
+.help ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.help ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.company-block {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-block > div {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-us,
+.contact-us,
+.gift-cards {
+    margin-bottom: 20px;
+}
+
+.about-us h3,
+.contact-us h3,
+.gift-cards h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.help,
+.newsletter {
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+.help h3,
+.newsletter h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.help ul {
+    list-style: none;
+    padding: 0;
+}
+
+.help ul li {
+    margin-bottom: 5px;
+}
+
+.help ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.help ul li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #cc0000;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-links ul li a:hover {
+    text-decoration: underline;
+}
+
